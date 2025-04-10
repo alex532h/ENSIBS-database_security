@@ -148,7 +148,7 @@ Commands list:
         try:
             serialized_result = (client_socket.recv(4096)).decode('utf-8')
             self.result_data = loads(serialized_result)
-            match self.result_data['result']:
+            match int(self.result_data['result']):
                 case 0:
                     if 4 == self.instruction:
                         encrypted_number_received = EncryptedNumber(keys.phe_public_key, int(self.result_data["data"]))
