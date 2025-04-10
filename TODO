@@ -1,3 +1,4 @@
 [ ] command 1: show table content instead of table name
 [ ] command 3 & 4: manage id not in db case
 [ ] manage all exception type
+[ ] package the project (setuptools, pyproject.toml, python build)
