@@ -214,7 +214,7 @@ def _connect_to_db() -> Tuple[MySQLConnectionAbstract, MySQLCursor]:
         "ope_salary TEXT);")
         db_connect.commit()
 
-        db_cursor.execute("TRUNCATE Employes;")
+        db_cursor.execute("TRUNCATE Employees;")
         db_connect.commit()
     except:
         _LOGGER.exception("failed to create a new table")
